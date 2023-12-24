@@ -1,0 +1,28 @@
+﻿/* Add your CSS styles here */
+.container {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

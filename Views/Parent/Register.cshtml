@@ -1,0 +1,70 @@
+﻿
+@{
+    ViewData["Title"] = "Parent Registration";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Parent Registration</title>
+    <script src="~/js/Register.js"></script> <!-- Update the path to match your file location -->
+    <link rel="stylesheet" href="~/css/Register.css">
+</head>
+<body>
+    <!-- Add this block to display error message -->
+    @if (ViewBag.ErrorMessage != null)
+    {
+        <div class="alert alert-danger" role="alert">
+            @ViewBag.ErrorMessage
+        </div>
+    }
+
+    <div class="container">
+        <!-- ... (existing content) ... -->
+        <form action="/Parent/Register" method="post" enctype="multipart/form-data" onsubmit="return validateForm()">
+            <!-- ... (existing form elements) ... -->
+        </form>
+    </div>
+
+    <div class="container">
+        <h1>Parent Registration</h1>
+        <form action="/Parent/Register" method="post" enctype="multipart/form-data" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="Email">Email:</label>
+                <input type="email" id="Email" name="Email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="ParentName">Parent Name:</label>
+                <input type="text" id="ParentName" name="ParentName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Password">Password:</label>
+                <input type="password" id="Password" name="Password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="ConfirmPassword">Confirm Password:</label>
+                <input type="password" id="ConfirmPassword" name="ConfirmPassword" required>
+            </div>
+
+            <div class="form-group">
+                <label for="StudentId">Student ID:</label>
+                <input type="number" id="StudentId" name="StudentId" required>
+            </div>
+
+            <div class="form-group">
+                <label for="ParentImage">Parent Image:</label>
+                <input type="file" id="ParentImage" name="ParentImage" accept="image/*">
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,55 @@
+﻿@using hight_school_follow_up.Models
+@model IEnumerable<DisplayViewModel>
+
+<!DOCTYPE html>
+<html>
+<head>
+ 
+  
+    <style>
+        
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Details</h1>
+    <table>
+        <tr>
+            <th>Student ID</th>
+            <th>Student Name</th>
+            <th>Level</th>
+            <th>Behaviour</th>
+            <th>Course Name</th>
+            <th>Grade</th>
+            <th>Teacher Name</th>
+            <th>Phone Number</th>
+        </tr>
+        @foreach (var displayItem in ViewData["displaydata"] as IEnumerable<hight_school_follow_up.Models.DisplayViewModel>)
+        {
+            <tr>
+                <td>@displayItem.studentlist.studentid</td>
+                <td>@displayItem.studentlist.studentname</td>
+                <td>@displayItem.studentlist.level</td>
+                <td>@displayItem.studentlist.behaviour</td>
+                <td>@displayItem.courselist.coursename</td>
+                <td>@(displayItem.gradelist != null ? displayItem.gradelist.grade.ToString() : "N/A")</td>
+                <td>@(displayItem.teacherlist != null ? displayItem.teacherlist.teachername : "N/A")</td>
+                <td>@(displayItem.teacherlist != null ? displayItem.teacherlist.phonenumber : "N/A")</td>
+            </tr>
+        }
+    </table>
+</body>
+</html>

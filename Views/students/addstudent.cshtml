@@ -1,0 +1,69 @@
+﻿@model hight_school_follow_up.Models.Student
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Student</title>
+    <!-- Add Bootstrap CSS link here -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h2>Add Student</h2>
+
+        <div class="row mt-3">
+            <div class="col-md-6">
+                @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+                {
+                    <div class="alert alert-danger" role="alert">
+                        @ViewBag.ErrorMessage
+                    </div>
+                }
+
+                @using (Html.BeginForm("addstudent", "Students", FormMethod.Post, new { @class = "needs-validation", novalidate = "novalidate" }))
+                {
+                    @Html.AntiForgeryToken()
+                  
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.studentname, htmlAttributes: new { @class = "control-label" })
+                        @Html.TextBoxFor(model => model.studentname, new { @class = "form-control", required = "required" })
+                        <div class="valid-feedback">Looks good!</div>
+                        <div class="invalid-feedback">Please provide a student name.</div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.level, htmlAttributes: new { @class = "control-label" })
+                        @Html.TextBoxFor(model => model.level, new { @class = "form-control", required = "required" })
+                        <div class="valid-feedback">Looks good!</div>
+                        <div class="invalid-feedback">Please provide a valid level.</div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.behaviour, htmlAttributes: new { @class = "control-label" })
+                        @Html.TextBoxFor(model => model.behaviour, new { @class = "form-control", required = "required" })
+                        <div class="valid-feedback">Looks good!</div>
+                        <div class="invalid-feedback">Please provide behavior details.</div>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Add Student</button>
+
+                        <!-- Link to Delete Student Page -->
+                        <p>Go to delete student page  <a href="https://localhost:7230/students/deletestudent">Click here</a>.</p>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Bootstrap and jQuery scripts here -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

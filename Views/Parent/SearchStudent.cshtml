@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Student</title>
+    <link rel="stylesheet" href="~/css/Register.css">
+</head>
+<body>
+
+    @if (ViewBag.ErrorMessage != null)
+    {
+        <div class="alert alert-danger" role="alert">
+            @ViewBag.ErrorMessage
+        </div>
+    }
+    <div class="container">
+        <form action="/Parent/SearchStudent" method="post" class="search-form">
+            <label for="studentID">Student ID:</label>
+            <input type="text" id="studentID" name="studentID" class="input-field" />
+            <br />
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" name="studentName" class="input-field" />
+            <br />
+            <input type="submit" value="Search" class="submit-btn" />
+        </form>
+    </div>
+
+</body>
+</html>

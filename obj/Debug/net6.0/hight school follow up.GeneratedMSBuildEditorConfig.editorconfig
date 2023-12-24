@@ -1,0 +1,89 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = hight_school_follow_up
+build_property.RootNamespace = hight_school_follow_up
+build_property.ProjectDir = D:\hight school follow up\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\hight school follow up
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/hight school follow up/Views/Courses/addcourse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xhZGRjb3Vyc2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/hight school follow up/Views/Grades/addgrades.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3JhZGVzXGFkZGdyYWRlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/hight school follow up/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/hight school follow up/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/hight school follow up/Views/Parent/DisplayStudentDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyZW50XERpc3BsYXlTdHVkZW50RGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/hight school follow up/Views/Parent/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyZW50XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/hight school follow up/Views/Parent/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyZW50XExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/hight school follow up/Views/Parent/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyZW50XFJlZ2lzdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/hight school follow up/Views/Parent/SearchStudent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyZW50XFNlYXJjaFN0dWRlbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/hight school follow up/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/hight school follow up/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/hight school follow up/Views/Shared/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WaWV3SW1wb3J0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/hight school follow up/Views/Shared/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/hight school follow up/Views/students/addstudent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncc3R1ZGVudHNcYWRkc3R1ZGVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/hight school follow up/Views/students/deletestudent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncc3R1ZGVudHNcZGVsZXRlc3R1ZGVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/hight school follow up/Views/teachers/addteacher.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdGVhY2hlcnNcYWRkdGVhY2hlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/hight school follow up/Views/teachers/loginn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdGVhY2hlcnNcbG9naW5uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/hight school follow up/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-0a8stjuz5e
